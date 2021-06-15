@@ -6,7 +6,7 @@ Suas principais operações são: enqueue(e) - insere um elemento no início da 
 peekFirst - acessa o primeiro elemento (próximo à saída); peekLast - acessa o último elemento (próximo à entrada da
 fila).
 
-~~~Java
+```Java
 class QueueDemo {
     public static void main(String[] args) {
         Queue<String> bankline = new ArrayDeque<>();
@@ -21,7 +21,7 @@ class QueueDemo {
         System.out.println("poll(): " + bankline.poll());
     }
 }
-~~~
+```
 
 ![img.png](img.png)
 
@@ -33,4 +33,4 @@ Buscar: O(n)
 Inserir: O(1)
 Excluir: O(1)
 
-#**Código da fila feito com array**
+#Código da fila feito com array

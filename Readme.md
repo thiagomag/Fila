@@ -23,7 +23,7 @@ class QueueDemo {
 }
 ```
 
-![img.png](img.png)
+![img.png](600px-Data_Queue.svg.png)
 
 
 Complexidade Big O

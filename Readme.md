@@ -25,7 +25,6 @@ class QueueDemo {
 
 ![img.png](img.png)
 
-*Código da fila feito com array*
 
 Complexidade Big O
 
@@ -33,3 +32,5 @@ Acessar: O(n)
 Buscar: O(n)
 Inserir: O(1)
 Excluir: O(1)
+
+#**Código da fila feito com array**

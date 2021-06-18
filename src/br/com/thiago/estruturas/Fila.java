@@ -61,16 +61,17 @@ public class Fila implements EstruturaDados {
     }
 
     @Override
-    public void listarTodos() {
+    public void listarTodos() { //O visual da fila está conforme uma fila de supermercado ultimo ----> primeiro.
         for (int i = this.pessoas.length - 1; i >= 0; i--) {
             if (this.pessoas[i] != null) {
                 if (i != 0) {
-                    System.out.print(this.pessoas[i] + " / ");
+                    System.out.print(i+1 + "º da fila: " + this.pessoas[i] + " / ");
                 } else {
-                    System.out.print(this.pessoas[i]);
+                    System.out.print(i+1 + "º da fila: " + this.pessoas[i]);
                 }
             }
         }
+        System.out.println();
         System.out.println();
     }
 

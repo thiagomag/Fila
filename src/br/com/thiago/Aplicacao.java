@@ -18,12 +18,15 @@ import java.util.stream.Stream;
 
 public class Aplicacao {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         Scanner input = new Scanner(System.in);
         boolean continua = true;
         Fila fila = new Fila();
         dadosIniciais(fila);
+        menu(input, continua, fila);
+    }
 
+    private static void menu(Scanner input, boolean continua, Fila fila) throws InterruptedException {
         while (continua) {
             switch(opcaoInicial(input)) {
                 case 1:
@@ -44,6 +47,7 @@ public class Aplicacao {
                     } catch (IndiceInexistenteException e){
                         System.err.println(e.getMessage());
                     }
+                    Thread.sleep(2000);
                     break;
                 case 4:
                     try{
@@ -53,6 +57,7 @@ public class Aplicacao {
                     } catch (PessoaNaoEcontradaException e) {
                         System.err.println(e.getMessage());
                     }
+                    Thread.sleep(2000);
                     break;
                 case 5:
                     try{
@@ -60,6 +65,7 @@ public class Aplicacao {
                     } catch (FilaVaziaException e){
                         System.err.println(e.getMessage());
                     }
+                    Thread.sleep(2000);
                     break;
                 case 6:
                     try{
@@ -68,7 +74,7 @@ public class Aplicacao {
                     } catch (TipoDeRemocaoException e){
                         System.err.println(e.getMessage());
                     }
-
+                    Thread.sleep(2000);
                     break;
                 case 7:
                     try{
@@ -77,6 +83,7 @@ public class Aplicacao {
                     } catch (TipoDeRemocaoException e) {
                         System.err.println(e.getMessage());
                     }
+                    Thread.sleep(2000);
                     break;
                 case 8:
                     continua = false;
